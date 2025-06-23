@@ -70,7 +70,7 @@ Prerequisites:
 Node.js 18+
 Angular CLI 17+
 
-▶️ Run the Angular Frontend
+Run the Angular Frontend
 
 cd frontend
 npm install
