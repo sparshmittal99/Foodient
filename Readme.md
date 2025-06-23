@@ -32,47 +32,66 @@ Foodient is a full-stack web application that enables donors to seamlessly regis
 ## Project Structure
 
 foodient-system/
+
 ├── backend/ # Spring Boot backend
+
 └── frontend/ # Angular frontend
 
 
 ---
 
 ## Setup Instructions
-
-1. Clone the Repository
-
+####1. Clone the Repository
+   
 git clone https://github.com/your-username/foodient-system.git
+
 cd foodient-system
 
 
-2. Backend Setup (Spring Boot)
+####2. Backend Setup (Spring Boot)
+
 Prerequisites:
+
 Java 17+
+
 Maven 3.8+
+
 PostgreSQL 14+
 
 Configuration:
+
 Update backend/src/main/resources/application.properties with your PostgreSQL credentials:
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/foodient
+
 spring.datasource.username=your_pg_username
+
 spring.datasource.password=your_pg_password
 
 Run the Application
+
 cd backend
+
 mvn clean install
+
 mvn spring-boot:run
+
 Spring Boot will start at: http://localhost:8080
 
-3. Frontend Setup (Angular)
+##3. Frontend Setup (Angular)
+
 Prerequisites:
+
 Node.js 18+
+
 Angular CLI 17+
 
 Run the Angular Frontend
 
 cd frontend
+
 npm install
+
 ng serve
+
 Frontend will run at: http://localhost:4200
