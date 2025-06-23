@@ -1,0 +1,15 @@
+<div>
+  <h2>Donate Food</h2>
+  <form (ngSubmit)="submit()">
+    <input type="text" [(ngModel)]="description" name="description" placeholder="Description" required>
+    <input type="number" [(ngModel)]="quantity" name="quantity" placeholder="Quantity" required>
+    <button type="submit">Donate</button>
+  </form>
+
+  <h3>Your Donations</h3>
+  <ul>
+    <li *ngFor="let d of donations">
+      {{ d.description }} - {{ d.quantity }}
+    </li>
+  </ul>
+</div>

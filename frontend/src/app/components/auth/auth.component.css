@@ -1,0 +1,11 @@
+.auth-container {
+  width: 300px;
+  margin: auto;
+  text-align: center;
+}
+.auth-container input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 90%;
+}
